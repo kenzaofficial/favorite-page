@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();
-
-  xhr.open("GET", "https://api.github.com/users/kenzaofficial");
+  const token = 'gZn3HXpbTilL_mUh0g4QrFOht4NdIsy1_1678224354';
+  xhr.open("GET", "https://api.sdating.net/v1/profile");
+  xhr.setRequestHeader("Authorization", "Bearer "  + token );
+  xhr.setRequestHeader('accept', 'application/json');
   xhr.send();
   xhr.onload = function () {
     if (xhr.status != 200) {
