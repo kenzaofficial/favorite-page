@@ -10,7 +10,62 @@
 </head>
 
 <body>
-  <script src="js/js.js"></script>.
+  <div class="container">
+    <table class="statistics">
+      <thead>
+        <tr>
+          <th class="statistics__name">Статистика анкеты</th>
+          <th>Сегодня</th>
+          <th>За все время</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button class="statistics__button">
+              <img src="img/eye.svg">
+              Просмотров
+              <svg height="13" width="23" viewBox="0 0 23 15">
+                <use href="img/sprite/sprite.svg#question-icon"></use>
+              </svg>
+            </button>
+          </td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>
+            <button class="statistics__button">
+              <img src="img/heart.svg">
+              В избранном
+              <svg height="13" width="23" viewBox="0 0 23 15">
+                <use href="img/sprite/sprite.svg#question-icon"></use>
+              </svg>
+            </button>
+          </td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="users-list">
+      <li class="users-list__item">
+        <div class="user-card">
+          <button class="user-card__button">
+            <img src="img/3dots.svg">
+          </button>
+          <a href="#" class="user-card__content">
+            <img src="" alt="фото пользователя" class="user-card__image">
+            <div class="user-card__text">
+              <p class="user-card__title">Лана</p>
+              <p class="user-card__description">Москва</p>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="js/js.js"></script>
 </body>
 
 </html>
